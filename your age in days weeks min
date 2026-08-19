@@ -1,6 +1,5 @@
 actual_age = int(input("what is your age"))
 age_sec = actual_age *365 *24*60
-age_min = actual_age *365 *24
 age_days = actual_age *365
 age_weeks = 52 * actual_age
 age_months = 12 * actual_age
