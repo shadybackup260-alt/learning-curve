@@ -1,2 +1,2 @@
 # learning-curve
-https://www.w3schools.com/Python/python_if_logical.asp ---> for logic operation exeplination
+https://www.geeksforgeeks.org/python/python-logical-operators/ ---> for logic operation exeplination
