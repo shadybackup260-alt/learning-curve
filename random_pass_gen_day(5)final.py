@@ -26,6 +26,16 @@ for num in range(1, nr_numbers + 1):
 for symb in range(1, nr_symbols + 1):
     password += random.choice(symbols)
 my_pass = password.split("")
+# هنا بيحول الـ string لـ list (قائمة) من الحروف، يعني كل حرف يبقى عنصر لوحده.
 random.shuffle(my_pass)
+# دي الدالة اللي بتخلط عناصر الـ list بشكل عشوائي (زي ما تخلط ورق كوتشينة). بقى بتغير في chars نفسها مباشرة (in-place)، يعني مش بترجع قيمة جديدة، هي بتعدل على الأصل.
 randomized_password = ''.join(my_pass)
+
+# هنا بيرجع يجمع الحروف اللي في الـ list ويحولها تاني لـ string واحد متصل.
+
+# ''.join(chars) معناها: خد كل عناصر الـ list وحطهم مع بعض في string واحد، والفاصل بينهم هو '' (يعني مفيش فاصل، الحروف هتتلزق في بعض على طول).
+
 print(randomized_password)
+
+# https://claude.ai/chat/9f6c9224-9c41-49d8-9ba5-e57c5d0661f1
+# for understanding the concept
